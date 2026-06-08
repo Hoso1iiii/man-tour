@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man-Tour | Регулярные рейсы и доставка посылок Армения — Россия</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans scroll-smooth">
+
+    <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 py-3.5 flex justify-between items-center">
+            <div class="flex items-center space-x-2 flex-shrink-0">
+                <i class="fa-solid fa-bus text-2xl text-red-600"></i>
+                <span class="text-xl font-black tracking-wider uppercase text-slate-900">Man-Tour</span>
+            </div>
+            
+            <div class="flex items-center space-x-3 md:space-x-6">
+                <nav class="hidden md:flex space-x-6 font-medium text-slate-600">
+                    <a href="#passengers" data-key="nav-passengers" class="hover:text-red-600 transition">Пассажирам</a>
+                    <a href="#cargo" data-key="nav-cargo" class="hover:text-red-600 transition">Посылкам и Грузам</a>
+                    <a href="#advantages" class="hover:text-red-600 transition">Почему мы</a>
+                </nav>
+
+                <div class="flex bg-slate-100 p-1 rounded-lg text-xs font-bold border border-slate-200 flex-shrink-0">
+                    <button id="lang-ru" class="px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-sm">RU</button>
+                    <button id="lang-am" class="px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-500 hover:text-slate-900">AM</button>
+                </div>
+
+                <a href="#contact" data-key="nav-contact" class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 md:px-4 rounded-lg font-bold text-xs md:text-sm transition inline-flex items-center space-x-2 flex-shrink-0">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Контакты</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-red-950 text-white py-16 lg:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <div class="relative max-w-6xl mx-auto px-4 text-center space-y-6">
+            <div data-key="hero-badge" class="inline-flex items-center space-x-2 bg-red-500/10 text-red-400 px-4 py-1.5 rounded-full text-xs uppercase tracking-wider font-bold border border-red-500/20">
+                🇦🇲 Армения ⇄ Россия 🇷🇺
+            </div>
+            <h1 data-key="hero-title" class="text-3xl md:text-5xl font-black tracking-tight max-w-3xl mx-auto leading-tight">
+                Пассажирские перевозки и доставка посылок Армения — Россия
+            </h1>
+            <p data-key="hero-desc" class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Регулярные рейсы без посредников. Комфортабельный транспорт, опытные водители и надежная перевозка ваших вещей и посылок.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#contact" data-key="btn-book" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3.5 rounded-xl font-bold transition shadow-lg flex items-center space-x-2">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Забронировать рейс</span>
+                </a>
+                <a href="#cargo" data-key="btn-cargo" class="border border-slate-700 hover:border-slate-500 text-white px-6 py-3.5 rounded-xl font-bold transition">
+                    Узнать про посылки
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="passengers" class="py-16 max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="w-12 h-12 bg-red-50 text-red-600 rounded-xl flex items-center justify-center text-xl shadow-sm">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h2 data-key="pass-title" class="text-3xl font-bold text-slate-900 tracking-tight">Пассажирам: Регулярные рейсы</h2>
+                <p data-key="pass-desc" class="text-slate-600 leading-relaxed">
+                    Организуем прямые поездки между Арменией и Россией. Мы позаботились о том, чтобы долгая дорога переносилась легко и безопасно.
+                </p>
+                <ul class="space-y-3 font-medium text-slate-700">
+                    <li class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                        <span data-key="pass-li1">Откидные сиденья и свободное место в салоне</span>
+                    </li>
+                    <li class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                        <span data-key="pass-li2">Кондиционер и отопление для комфорта в любой сезон</span>
+                    </li>
+                    <li class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                        <span data-key="pass-li3">Вместительный багажный отсек (багаж входит в стоимость билета)</span>
+                    </li>
+                    <li class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                        <span data-key="pass-li4">Опытные водители, отлично знающие весь маршрут</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gradient-to-br from-red-600 to-red-800 text-white p-8 rounded-2xl shadow-xl space-y-6">
+                <h3 data-key="route-title" class="text-xl font-bold">Наш основной маршрут</h3>
+                <div class="space-y-4 border-l-2 border-white/20 pl-4">
+                    <div>
+                        <div data-key="route-main" class="font-bold text-lg">Ереван ⇄ Москва</div>
+                        <div data-key="route-sub1" class="text-sm text-red-100">Регулярные рейсы туда и обратно</div>
+                    </div>
+                    <div>
+                        <div data-key="route-way" class="font-bold text-lg">Города по пути следования</div>
+                        <div data-key="route-sub2" class="text-sm text-red-100">Возможность посадки и высадки в городах на основном маршруте. Уточняйте у диспетчера.</div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <a href="#contact" data-key="route-btn" class="block text-center bg-white text-red-700 font-bold py-3 rounded-xl hover:bg-red-50 transition">
+                        Узнать расписание
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="max-w-6xl mx-auto border-slate-200">
+
+    <section id="cargo" class="py-16 max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6 md:order-2">
+                <h3 data-key="cargo-list-title" class="text-xl font-bold text-slate-900">Что можно передать с нами:</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2">
+                        <i class="fa-solid fa-box text-xl text-red-600"></i>
+                        <div data-key="cargo-type1-title" class="font-bold text-sm">Личные посылки</div>
+                        <p data-key="cargo-type1-desc" class="text-xs text-slate-500">Сумки, коробки, вещи и передачи родственникам.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl space-y-2">
+                        <i class="fa-solid fa-dolly text-xl text-red-600"></i>
+                        <div data-key="cargo-type2-title" class="font-bold text-sm">Коммерческие грузы</div>
+                        <p data-key="cargo-type2-desc" class="text-xs text-slate-500">Товары для бизнеса и небольшие оптовые партии.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6 md:order-1">
+                <div class="w-12 h-12 bg-red-50 text-red-600 rounded-xl flex items-center justify-center text-xl shadow-sm">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <h2 data-key="cargo-title" class="text-3xl font-bold text-slate-900 tracking-tight">Надежная доставка посылок</h2>
+                <p data-key="cargo-desc" class="text-slate-600 leading-relaxed">
+                    Нужно передать личные вещи близким или привезти товар? Мы бережно доставим вашу посылку в пункт назначения. Вы сдаете груз напрямую нам, а мы отвечаем за его сохранность в пути.
+                </p>
+                <div class="bg-slate-100 p-4 rounded-xl border-l-4 border-red-600 text-sm text-slate-700">
+                    <strong data-key="cargo-alert-bold">Безопасность:</strong> <span data-key="cargo-alert-text">Все посылки надежно фиксируются внутри багажного отделения, что полностью защищает их от повреждений в дороге.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages" class="bg-slate-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-12 space-y-2">
+                <h2 data-key="adv-main-title" class="text-2xl md:text-3xl font-bold tracking-tight">Почему выбирают Man-Tour</h2>
+                <p data-key="adv-main-sub" class="text-slate-400 text-sm">Работаем честно и напрямую по маршруту Армения — Россия</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="space-y-2 p-4">
+                    <i class="fa-solid fa-clock text-3xl text-red-500"></i>
+                    <h4 data-key="adv1-title" class="font-bold text-lg">Регулярные выезды</h4>
+                    <p data-key="adv1-desc" class="text-sm text-slate-400">Выезжаем строго по расписанию. Водители отлично знают трассу и специфику прохождения границы.</p>
+                </div>
+                <div class="space-y-2 p-4">
+                    <i class="fa-solid fa-handshake text-3xl text-red-500"></i>
+                    <h4 data-key="adv2-title" class="font-bold text-lg">Фиксированная цена</h4>
+                    <p data-key="adv2-desc" class="text-sm text-slate-400">Стоимость билета или посылки озвучивается сразу при бронировании. Никаких доплат в пути.</p>
+                </div>
+                <div class="space-y-2 p-4">
+                    <i class="fa-solid fa-phone-volume text-3xl text-red-500"></i>
+                    <h4 data-key="adv3-title" class="font-bold text-lg">Прямая связь</h4>
+                    <p class="text-sm text-slate-400" data-key="adv3-desc">Вы общаетесь напрямую с нами, без диспетчерских служб-посредников. Всегда сориентируем, где машина.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-xl mx-auto px-4 text-center space-y-6">
+            <h2 data-key="cont-title" class="text-3xl font-bold text-slate-900">Узнать даты рейсов и забронировать</h2>
+            <p data-key="cont-desc" class="text-slate-600">Свяжитесь с нами напрямую. Скажем актуальные даты выезда, запишем на поездку или рассчитаем стоимость посылки.</p>
+            
+            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-4">
+                <div data-key="cont-box-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Контакты для связи</div>
+                <div class="space-y-2">
+                    <a href="tel:+374000000" class="block text-xl font-black text-slate-900 hover:text-red-600 transition">+374 (00) 00-00-00 <span class="text-sm text-slate-400 font-normal" data-key="lang-arm-label">(Армения)</span></a>
+                    <a href="tel:+700000000" class="block text-xl font-black text-slate-900 hover:text-red-600 transition">+7 (000) 000-00-00 <span class="text-sm text-slate-400 font-normal" data-key="lang-rus-label">(Россия)</span></a>
+                </div>
+                <div class="pt-4 flex justify-center space-x-4">
+                    <a href="https://wa.me/374000000" target="_blank" class="w-12 h-12 bg-emerald-50 text-emerald-600 hover:bg-emerald-600 hover:text-white rounded-xl flex items-center justify-center text-xl transition">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/your_username" target="_blank" class="w-12 h-12 bg-sky-50 text-sky-600 hover:bg-sky-600 hover:text-white rounded-xl flex items-center justify-center text-xl transition">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 py-8 border-t border-slate-800 text-center text-sm">
+        <p data-key="footer-text">&copy; 2026 Man-Tour. Пассажирские перевозки и доставка посылок Армения — Россия.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            'ru': {
+                'nav-passengers': 'Пассажирам',
+                'nav-cargo': 'Посылкам и Грузам',
+                'nav-why': 'Почему мы',
+                'nav-contact': 'Контакты',
+                'hero-badge': '🇦🇲 Армения ⇄ Россия 🇷🇺',
+                'hero-title': 'Пассажирские перевозки и доставка посылок Армения — Россия',
+                'hero-desc': 'Регулярные рейсы без посредников. Комфортабельный транспорт, опытные водители и надежная перевозка ваших вещей и посылок.',
+                'btn-book': 'Забронировать рейс',
+                'btn-cargo': 'Узнать про посылки',
+                'pass-title': 'Пассажирам: Регулярные рейсы',
+                'pass-desc': 'Организуем прямые поездки между Арменией и Россией. Мы позаботились о том, чтобы долгая дорога переносилась легко и безопасно.',
+                'pass-li1': 'Откидные сиденья и свободное место в салоне',
+                'pass-li2': 'Кондиционер и отопление для комфорта в любой сезон',
+                'pass-li3': 'Вместительный багажный отсек (багаж входит в стоимость билета)',
+                'pass-li4': 'Опытные водители, отлично знающие весь маршрут',
+                'route-title': 'Наш основной маршрут',
+                'route-main': 'Ереван ⇄ Москва',
+                'route-sub1': 'Регулярные рейсы туда и обратно',
+                'route-way': 'Города по пути следования',
+                'route-sub2': 'Возможность посадки и высадки в городах на основном маршруте. Уточняйте у диспетчера.',
+                'route-btn': 'Узнать расписание',
+                'cargo-list-title': 'Что можно передать с нами:',
+                'cargo-type1-title': 'Личные посылки',
+                'cargo-type1-desc': 'Сумки, коробки, вещи и передачи родственникам.',
+                'cargo-type2-title': 'Коммерческие грузы',
+                'cargo-type2-desc': 'Товары для бизнеса и небольшие оптовые партии.',
+                'cargo-title': 'Надежная доставка посылок',
+                'cargo-desc': 'Нужно передать личные вещи близким или привезти товар? Мы бережно доставим вашу посылку в пункт назначения. Вы сдаете груз напрямую нам, а мы отвечаем за его сохранность в пути.',
+                'cargo-alert-bold': 'Безопасность:',
+                'cargo-alert-text': 'Все посылки надежно фиксируются внутри багажного отделения, что полностью защищает их от повреждений в дороге.',
+                'adv-main-title': 'Почему выбирают Man-Tour',
+                'adv-main-sub': 'Работаем честно и напрямую по маршруту Армения — Россия',
+                'adv1-title': 'Регулярные выезды',
+                'adv1-desc': 'Выезжаем строго по расписанию. Водители отлично знают трассу и специфику прохождения границы.',
+                'adv2-title': 'Фиксированная цена',
+                'adv2-desc': 'Стоимость билета или посылки озвучивается сразу при бронировании. Никаких доплат в пути.',
+                'adv3-title': 'Прямая связь',
+                'adv3-desc': 'Вы общаетесь напрямую с нами, без диспетчерских служб-посредников. Всегда сориентируем, где машина.',
+                'cont-title': 'Узнать даты рейсов и забронировать',
+                'cont-desc': 'Свяжитесь с нами напрямую. Скажем актуальные даты выезда, запишем на поездку или рассчитаем стоимость посылки.',
+                'cont-box-title': 'Контакты для связи',
+                'lang-arm-label': '(Армения)',
+                'lang-rus-label': '(Россия)',
+                'footer-text': '© 2026 Man-Tour. Пассажирские перевозки и доставка посылок Армения — Россия.'
+            },
+            'am': {
+                'nav-passengers': 'Ուղևորներին',
+                'nav-cargo': 'Ծանրոցներ և Բեռներ',
+                'nav-why': 'Ինչու մենք',
+                'nav-contact': 'Կապ',
+                'hero-badge': '🇦🇲 Հայաստան ⇄ Ռուսաստան 🇷🇺',
+                'hero-title': 'Ուղևորափոխադրումներ և ծանրոցների փոխադրում Հայաստան — Ռուսաստան',
+                'hero-desc': 'Կանոնավոր չվերթներ առանց միջնորդների: Հարմարավետ տրանսպորտ, փորձառու վարորդներ և Ձեր իրերի ու ծանրոցների հուսալի տեղափոխում:',
+                'btn-book': 'Ամրագրել ուղևորություն',
+                'btn-cargo': 'Իմանալ ծանրոցների մասին',
+                'pass-title': 'Ուղևորներին. Կանոնավոր չվերթներ',
+                'pass-desc': 'Կազմակերպում ենք ուղիղ ուղևորություններ Հայաստանի և Ռուսաստանի միջև: Մենք հոգ ենք տարել, որ երկար ճանապարհը անցնի հեշտ և անվտանգ:',
+                'pass-li1': 'Հետ թեքվող նստատեղեր և ազատ տարածություն սրահում',
+                'pass-li2': 'Օդորակիչ և ջեռուցում՝ ցանկացած եղանակին հարմարավետության համար',
+                'pass-li3': 'Ընդարձակ բեռնախցիկ (բեռը ներառված է տոմսի արժեքի մեջ)',
+                'pass-li4': 'Փորձառու վարորդներ, ովքեր հիանալի գիտեն ողջ երթուղին',
+                'route-title': 'Մեր հիմնական երթուղին',
+                'route-main': 'Երևան ⇄ Մոսկվա',
+                'route-sub1': 'Կանոնավոր չվերթներ դեպի հետ և առաջ',
+                'route-way': 'Քաղաքներ երթուղու ճանապարհին',
+                'route-sub2': 'Հիմնական երթուղու քաղաքներում նստելու և իջնելու հնարավորություն: Ճշտեք դիսպետչերի հետ:',
+                'route-btn': 'Իմանալ չվացուցակը',
+                'cargo-list-title': 'Ինչ կարող եք փոխանցել մեզ հետ.',
+                'cargo-type1-title': 'Անձնական ծանրոցներ',
+                'cargo-type1-desc': 'Պայուսակներ, արկղեր, իրեր և փոխանցումներ հարազատներին:',
+                'cargo-type2-title': 'Կոմերցիոն բեռներ',
+                'cargo-type2-desc': 'Ապրանքներ բիզնեսի համար և փոքր մեծածախ խմբաքանակներ:',
+                'cargo-title': 'Ծանրոցների հուսալի առաքում',
+                'cargo-desc': 'Անհրաժեշտ է անձնական իրե՞ր փոխանցել հարազատներին կամ ապրանք բերե՞լ: Մենք խնամքով կհասցնենք Ձեր ծանրոցը նշանակված վայր: Դուք բեռը հանձնում եք ուղիղ մեզ, իսկ մենք պատասխանատու ենք ճանապարհին դրա պահպանման համար:',
+                'cargo-alert-bold': 'Անվտանգություն.',
+                'cargo-alert-text': 'Բոլոր ծանրոցները հուսալիորեն ամրացվում են բեռնախցիկում, ինչը լիովին պաշտպանում է դրանք ճանապարհին վնասվելուց:',
+                'adv-main-title': 'Ինչու ընտրել Man-Tour-ը',
+                'adv-main-sub': 'Աշխատում ենք ազնիվ և ուղիղ Հայաստան — Ռուսաստան երթուղով',
+                'adv1-title': 'Կանոնավոր մեկնումներ',
+                'adv1-desc': 'Մեկնում ենք խիստ ըստ չվացուցակի: Վարորդները հիանալի գիտեն ճանապարհը և սահմանն անցնելու նրբությունները:',
+                'adv2-title': 'Ֆիքսված գին',
+                'adv2-desc': 'Տոմսի կամ ծանրոցի արժեքը հայտնվում է անմիջապես ամրագրման ժամանակ: Ճանապարհին հավելավճարներ չկան:',
+                'adv3-title': 'Ուղիղ կապ',
+                'adv3-desc': 'Դուք շփվում եք անմիջապես մեզ հետ՝ առանց միջնորդ դիսպետչերական ծառայությունների: Միշտ կհուշենք, թե որտեղ է մեքենան:',
+                'cont-title': 'Իմանալ մեկնման ամսաթվերը և ամրագրել',
+                'cont-desc': 'Կապվեք մեզ հետ ուղիղ: Կհայտնենք մեկնման արդիական ամսաթվերը, կգրանցենք ուղևորության համար կամ կհաշվարկենք ծանրոցի արժեքը:',
+                'cont-box-title': 'Կապի տվյալներ',
+                'lang-arm-label': '(Հայաստան)',
+                'lang-rus-label': '(Ռուսաստան)',
+                'footer-text': '© 2026 Man-Tour. Ուղևորափոխադրումներ և ծանրոցների փոխադրում Հայաստան — Ռուսաստան:'
+            }
+        };
+
+        const btnRu = document.getElementById('lang-ru');
+        const btnAm = document.getElementById('lang-am');
+
+        function setLanguage(lang) {
+            if (lang === 'ru') {
+                btnRu.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-sm";
+                btnAm.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-500 hover:text-slate-900";
+            } else {
+                btnAm.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-sm";
+                btnRu.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-500 hover:text-slate-900";
+            }
+
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        btnRu.addEventListener('click', () => setLanguage('ru'));
+        btnAm.addEventListener('click', () => setLanguage('am'));
+
+        // ПЛАВНЫЙ СКРОЛЛ
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
